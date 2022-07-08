@@ -1,0 +1,113 @@
+body 
+	padding 0
+	margin 0
+	height 100vh
+	background -webkit-linear-gradient(white 0% , #F2F7FF 100%)
+	font-family sans-serif
+	-webkit-font-smoothing antialiased
+	
+.active-back
+	color #69748A + 40 !important
+	&:hover
+		cursor pointer
+		color #286EFA !important
+		
+.back
+	position absolute
+	height 20px
+	width 40px
+	color #C2C6D0 + 20
+	display block
+	transition .3s
+	margin-left 20px
+	margin-top -30px
+	font-size 24px
+
+.shift
+	left -330px !important
+
+h3
+	position absolute
+	margin-left 88px
+	margin-top 80px
+	font-size 22px
+	font-weight 200
+	color #4F5C76
+
+input
+	width 250px
+	height 35px
+	border-radius 3px
+	border 1px solid #CCCCCC
+	font-size 14px
+	padding-left 10px
+	transition .3s
+	&::-webkit-input-placeholder
+		font-size 14px
+	&:focus
+		border 1px solid #286EFA !important
+		outline-width 0
+button
+	margin-top 30px
+	width 262px
+	height 40px
+	background #286EFA
+	color white
+	font-size 14px
+	border 1px solid #286EFA
+	border-radius 3px
+	&:hover
+		background #286EFA + 20
+		cursor pointer
+	
+.form
+	position relative
+	margin 0 auto
+	margin-top 100px
+	width 400px
+	height 400px
+	background white
+	box-shadow 0px 5px 80px 0px #E4E8F0
+	border-radius 5px
+	overflow hidden
+	form
+		margin-top 50px
+		width 750px
+		.inputs
+			position relative
+			left 65px
+			top 150px
+			transition .3s
+			.email
+				float left
+				position relative
+				width 350px
+			.password
+				float right
+				position relative
+				width 350px
+.warning
+	color red
+	text-align center
+	font-size 15px
+	margin-top 30px
+.loader
+	margin-left 22%
+	margin-top 22%
+	width 50px
+	height 50px
+	border-radius 50%
+	border 5px solid #EDF0F6 - 5
+	border-top-color #286EFA
+	animation spinner 1s infinite linear
+
+	
+@keyframes spinner
+	0%
+		transform rotate(0deg)
+	100%
+		transform rotate(360deg)
+		
+
+
+			

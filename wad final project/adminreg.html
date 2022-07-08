@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="css/customerregistration.css">
+  <script src="js/cusomerreg.js"></script>
+</head>
+<body>
+	<div class="main">
+		<h1>ADMIN Registration</h1>
+		<div class="form1">
+		<!--	Registration Form<br>!-->
+			<form name="simple" onsubmit="return empty();" method="post" action="php/adminreg.php">
+				<input type="text"  name="req1" id="req1" placeholder="Full name"><br><br>		
+			
+				<input type="text" name="req2" id="req2" placeholder="Email address"><br><br>
+				
+				<input type="password" name="req3" id="req3" placeholder="Password"><br><br>
+                <input type="text" name="req4" id="req4" placeholder="Id no"><br><br>
+                <input type="tel" name="req5" id="req5" placeholder="contact number"><br><br>	
+	
+				<br><br>
+				<input type="submit" value="Submit" onclick="emailValidate(document.getElementById('req2'),'Invalid Email id.'),isNumeric(document.getElementById('req4'),'entervalid id number.')">
+
+
+			</form>
+		</div>	
+	</div>
+
+
+</body>
+</html>
